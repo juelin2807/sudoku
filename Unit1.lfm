@@ -1,0 +1,2534 @@
+object Form1: TForm1
+  Left = 0
+  Height = 768
+  Top = 0
+  Width = 1024
+  BorderStyle = bsSingle
+  ClientHeight = 0
+  ClientWidth = 0
+  Color = clBlack
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -21
+  Font.Name = 'Courier New'
+  Font.Pitch = fpFixed
+  Font.Quality = fqDraft
+  Font.Style = [fsBold]
+  Icon.Data = {
+    BE1000000000010001002020000001002000A810000016000000280000002000
+    0000400000000100200000000000001000006400000064000000000000000000
+    00009B9B9CFFCACACBFFCBCACBFFB9B9BAFFC4C3C5FFAAA9AAFFC7C6C7FFBBBA
+    BBFFCAC9CAFFCACACBFF9D9D9EFFCAC9CBFFCACACBFFCAC9CAFFBAB9BAFFC9C9
+    CAFFCAC9CBFFB8B7B8FFCACACBFFCBCACBFFCAC9CAFF9B9A9BFFB9B8B9FFB4B3
+    B5FFBAB9BAFFC8C8C9FFCAC9CBFFCAC9CAFFBBBBBCFFCACACBFFCACACBFFA3A2
+    A4FFBFBFBFFFFDFDFDFFFEFEFEFFE6E6E6FFBCBCBCFF646464FFE0E0E0FFE7E7
+    E7FFFDFDFDFFFEFEFEFFC1C1C1FFFDFDFDFFFDFDFDFFFDFDFDFFE6E6E6FFFCFC
+    FCFFFCFCFCFFE5E5E5FFFDFDFDFFFEFEFEFFFCFCFCFFBEBEBEFFB6B6B6FF9696
+    96FFE7E7E7FFFAFAFAFFFCFCFCFFFDFDFDFFE9E9E9FFFDFDFDFFFEFEFEFFCAC9
+    CBFFBFBFBFFFFDFDFDFFFDFDFDFFE6E6E6FFC5C5C5FF696969FFEEEEEEFFE7E7
+    E7FFFDFDFDFFFEFEFEFFC1C1C1FFFDFDFDFFFDFDFDFFFDFDFDFFE6E6E6FFFCFC
+    FCFFFCFCFCFFE5E5E5FFFDFDFDFFFEFEFEFFFCFCFCFFBDBDBDFFCACACAFF8989
+    89FFE7E7E7FFFAFAFAFFFCFCFCFFFDFDFDFFE9E9E9FFFDFDFDFFFDFDFDFFCAC9
+    CBFFB0B0B0FFE8E8E8FFE9E9E9FFD4D4D4FFE6E6E6FFE5E5E5FFE6E6E6FFD5D5
+    D5FFE7E7E7FFE8E8E8FFB3B3B3FFE8E8E8FFE8E8E8FFE7E7E7FFD4D4D4FFE8E8
+    E8FFE8E8E8FFD3D3D3FFE8E8E8FFE9E9E9FFE8E8E8FFB0B0B0FFE4E4E4FFE6E6
+    E6FFD5D5D5FFE6E6E6FFE8E8E8FFE8E8E8FFD7D7D7FFE8E8E8FFE8E8E8FFBBBA
+    BBFFBEBEBEFFA9A9A9FFAEAEAEFFE6E6E6FFFDFDFDFFFDFDFDFFFBFBFBFFE6E6
+    E6FFB4B4B4FFBABABAFFC1C1C1FFEAEAEAFF909090FFECECECFFE6E6E6FFFCFC
+    FCFFFDFDFDFFE5E5E5FFFCFCFCFFFDFDFDFFFBFBFBFFBDBDBDFFDDDDDDFFA3A3
+    A3FFE5E5E5FFF9F9F9FFFDFDFDFFFBFBFBFFE8E8E8FFFDFDFDFFFDFDFDFFCAC9
+    CAFFBEBEBEFF747474FFAFAFAFFFE6E6E6FFFDFDFDFFFCFCFCFFFBFBFBFFE5E5
+    E5FF848484FF828282FFC1C1C1FFEDEDEDFF808080FFECECECFFE6E6E6FFFCFC
+    FCFFFCFCFCFFE5E5E5FFFDFDFDFFFDFDFDFFFCFCFCFFBDBDBDFFA6A6A6FF7A7A
+    7AFFE6E6E6FFFAFAFAFFFCFCFCFFFDFDFDFFE8E8E8FFFCFCFCFFFCFCFCFFCAC9
+    CAFFBDBDBDFFCACACAFFCACACAFFE4E4E4FFFAFAFAFFFAFAFAFFF8F8F8FFE4E4
+    E4FFBEBEBEFFD6D6D6FFBFBFBFFFF5F5F5FFA9A9A9FFF1F1F1FFE3E3E3FFFAFA
+    FAFFFAFAFAFFE3E3E3FFFAFAFAFFFAFAFAFFFAFAFAFFBDBDBDFFF6F6F6FFC8C8
+    C8FFE5E5E5FFF7F7F7FFFAFAFAFFFAFAFAFFE6E6E6FFFAFAFAFFFAFAFAFFC8C7
+    C9FFB1B1B1FFC6C6C6FFDADADAFFD3D3D3FFE7E7E7FFE7E7E7FFE5E5E5FFD3D3
+    D3FFD2D2D2FFE6E6E6FFB3B3B3FFE0E0E0FFC0C0C0FFE0E0E0FFD3D3D3FFE6E6
+    E6FFE7E7E7FFD2D2D2FFE7E7E7FFE7E7E7FFE7E7E7FFB0B0B0FFE4E4E4FFD5D5
+    D5FFD3D3D3FFE3E3E3FFBABABAFFE1E1E1FFD5D5D5FFE7E7E7FFE7E7E7FFB9B9
+    BAFFBEBEBEFFAEAEAEFF8C8C8CFFE6E6E6FFFDFDFDFFFCFCFCFFFBFBFBFFE6E6
+    E6FFAEAEAEFFD7D7D7FFC1C1C1FFEFEFEFFF737373FFEEEEEEFFE6E6E6FFFCFC
+    FCFFFCFCFCFFE5E5E5FFFEFEFEFFFEFEFEFFFCFCFCFFBEBEBEFFF1F1F1FF9A9A
+    9AFFE7E7E7FFDEDEDEFF626262FFBEBEBEFFE8E8E8FFFDFDFDFFFDFDFDFFCAC9
+    CBFFBFBFBFFF9C9C9CFFCBCBCBFFE6E6E6FFFCFCFCFFFDFDFDFFFBFBFBFFE6E6
+    E6FFB3B3B3FF9D9D9DFFC1C1C1FFEEEEEEFF7B7B7BFFE8E8E8FFE5E5E5FFFCFC
+    FCFFFDFDFDFFE5E5E5FFFDFDFDFFFDFDFDFFFCFCFCFFBDBDBDFFD3D3D3FFA4A4
+    A4FFE7E7E7FFE6E6E6FF6E6E6EFFD1D1D1FFE8E8E8FFFDFDFDFFFDFDFDFFC9C9
+    CAFF929292FFBDBDBDFFBCBCBCFFB0B0B0FFBEBEBEFFBFBFBFFFBDBDBDFFAFAF
+    AFFFBDBDBDFFBDBDBDFF959595FFBDBDBDFFBDBDBDFFBCBCBCFFAEAEAEFFBEBE
+    BEFFBFBFBFFFB0B0B0FFBDBDBDFFBEBEBEFFBDBDBDFF939393FFBDBDBDFFBDBD
+    BDFFAFAFAFFFBCBCBCFFBDBDBDFFBCBCBCFFB1B1B1FFBFBFBFFFBFBFBFFF9A9A
+    9BFFBFBFBFFFFCFCFCFFFDFDFDFFE6E6E6FFE1E1E1FF9B9B9BFFF7F7F7FFE7E7
+    E7FFFCFCFCFFFDFDFDFFBFBFBFFFFCFCFCFFFDFDFDFFFCFCFCFFE4E4E4FFAFAF
+    AFFFC2C2C2FFE5E5E5FFEAEAEAFF9D9D9DFFF0F0F0FFBDBDBDFFFCFCFCFFFDFD
+    FDFFE7E7E7FFF9F9F9FFFDFDFDFFFCFCFCFFE8E8E8FFFDFDFDFFFDFDFDFFCAC9
+    CBFFBFBFBFFFFDFDFDFFFEFEFEFFE6E6E6FFF9F9F9FF797979FFF2F2F2FFE7E7
+    E7FFFDFDFDFFFEFEFEFFC1C1C1FFFDFDFDFFFDFDFDFFFDFDFDFFE5E5E5FFDFDF
+    DFFF9E9E9EFFE5E5E5FFCECECEFF7C7C7CFFC4C4C4FFBFBFBFFFFDFDFDFFFDFD
+    FDFFE7E7E7FFFAFAFAFFFDFDFDFFFDFDFDFFE9E9E9FFFDFDFDFFFDFDFDFFCAC9
+    CBFFBFBFBFFFFDFDFDFFFDFDFDFFE6E6E6FFEAEAEAFFA4A4A4FFF7F7F7FFE7E7
+    E7FFFDFDFDFFFDFDFDFFC1C1C1FFFDFDFDFFFDFDFDFFFDFDFDFFE5E5E5FFC2C2
+    C2FFC2C2C2FFE5E5E5FFE9E9E9FFA1A1A1FFEFEFEFFFBEBEBEFFFDFDFDFFFDFD
+    FDFFE7E7E7FFFAFAFAFFFCFCFCFFFCFCFCFFE9E9E9FFFDFDFDFFFEFEFEFFCAC9
+    CBFFAFAFAFFFE5E5E5FFE5E5E5FFD2D2D2FFE5E5E5FFE5E5E5FFE3E3E3FFD2D2
+    D2FFD9D9D9FFDDDDDDFFB2B2B2FFE4E4E4FFE4E4E4FFE5E5E5FFD1D1D1FFE5E5
+    E5FFE6E6E6FFD0D0D0FFE5E5E5FFE5E5E5FFE5E5E5FFAFAFAFFFDCDCDCFFD9D9
+    D9FFD1D1D1FFE3E3E3FFE5E5E5FFE5E5E5FFD4D4D4FFE5E5E5FFE5E5E5FFB9B8
+    B9FFBFBFBFFFFDFDFDFFFDFDFDFFE6E6E6FFFDFDFDFFFCFCFCFFFBFBFBFFE6E6
+    E6FF888888FFBBBBBBFFC1C1C1FFFDFDFDFFFDFDFDFFFDFDFDFFE6E6E6FFFCFC
+    FCFFFCFCFCFFE5E5E5FFFDFDFDFFFDFDFDFFFCFCFCFFBEBEBEFF909090FF7373
+    73FFE6E6E6FFFAFAFAFFFCFCFCFFFDFDFDFFE8E8E8FFFCFCFCFFFCFCFCFFCAC9
+    CAFFBFBFBFFFFCFCFCFFFCFCFCFFE6E6E6FFFCFCFCFFFCFCFCFFFBFBFBFFE6E6
+    E6FFB5B5B5FF9E9E9EFFC1C1C1FFFCFCFCFFFCFCFCFFFCFCFCFFE5E5E5FFFCFC
+    FCFFFCFCFCFFE4E4E4FFFDFDFDFFFCFCFCFFFCFCFCFFBDBDBDFF939393FF8787
+    87FFE6E6E6FFFAFAFAFFFCFCFCFFFCFCFCFFE8E8E8FFFCFCFCFFFCFCFCFFC9C8
+    CAFFB1B1B1FFE6E6E6FFE6E6E6FFD4D4D4FFE6E6E6FFE6E6E6FFE5E5E5FFD2D2
+    D2FFDEDEDEFFE2E2E2FFB1B1B1FFE6E6E6FFE5E5E5FFE6E6E6FFD1D1D1FFE5E5
+    E5FFE5E5E5FFD1D1D1FFE6E6E6FFE6E6E6FFE5E5E5FFAFAFAFFFE2E2E2FFE1E1
+    E1FFD3D3D3FFE3E3E3FFE6E6E6FFE6E6E6FFD4D4D4FFE6E6E6FFE6E6E6FFB9B9
+    BAFFBFBFBFFFFCFCFCFFFDFDFDFFE6E6E6FFFDFDFDFFFDFDFDFFFBFBFBFFE6E6
+    E6FFFCFCFCFFFDFDFDFFC1C1C1FFE9E9E9FF969696FFE0E0E0FFE5E5E5FFAFAF
+    AFFFB0B0B0FFE4E4E4FFFDFDFDFFFDFDFDFFFCFCFCFFBEBEBEFFFCFCFCFFFDFD
+    FDFFE7E7E7FFF0F0F0FF959595FFE7E7E7FFE8E8E8FFFDFDFDFFFDFDFDFFC9C8
+    CAFFBFBFBFFFFDFDFDFFFDFDFDFFE5E5E5FFFDFDFDFFFDFDFDFFFBFBFBFFE7E7
+    E7FFFDFDFDFFFDFDFDFFC1C1C1FFC5C5C5FF7A7A7AFFD6D6D6FFE3E3E3FF8787
+    87FF898989FFE4E4E4FFFDFDFDFFFDFDFDFFFCFCFCFFBFBFBFFFFDFDFDFFFDFD
+    FDFFE7E7E7FFF8F8F8FF8F8F8FFFDDDDDDFFE8E8E8FFFDFDFDFFFDFDFDFFCAC9
+    CAFFBFBFBFFFFDFDFDFFFDFDFDFFE6E6E6FFFDFDFDFFFCFCFCFFFBFBFBFFE7E7
+    E7FFFCFCFCFFFDFDFDFFC1C1C1FFF6F6F6FFA5A5A5FFEDEDEDFFE3E3E3FFC3C3
+    C3FFC5C5C5FFE5E5E5FFFDFDFDFFFDFDFDFFFBFBFBFFBEBEBEFFFCFCFCFFFDFD
+    FDFFE7E7E7FFF5F5F5FFA3A3A3FFF1F1F1FFE8E8E8FFFDFDFDFFFDFDFDFFCAC9
+    CAFF959595FFC1C1C1FFC1C1C1FFB4B4B4FFC1C1C1FFBFBFBFFFC1C1C1FFB2B2
+    B2FFBEBEBEFFC1C1C1FF989898FFC2C2C2FFC2C2C2FFC1C1C1FFB2B2B2FFC1C1
+    C1FFC2C2C2FFB2B2B2FFC2C2C2FFC2C2C2FFC1C1C1FF979797FFBFBFBFFFC1C1
+    C1FFB2B2B2FFC0C0C0FFC2C2C2FFC0C0C0FFB4B4B4FFC2C2C2FFC2C2C2FF9D9C
+    9DFFBFBFBFFFFDFDFDFFFDFDFDFFE6E6E6FFBFBFBFFF6C6C6CFFDDDDDDFFE5E5
+    E5FF7E7E7EFF8E8E8EFFC1C1C1FFFDFDFDFFFDFDFDFFFDFDFDFFE6E6E6FFFDFD
+    FDFFFDFDFDFFE6E6E6FFD8D8D8FF757575FFDCDCDCFFBEBEBEFFC2C2C2FF8181
+    81FFE6E6E6FFFAFAFAFFFDFDFDFFFDFDFDFFE9E9E9FFEBEBEBFFA7A7A7FFCAC9
+    CAFFBFBFBFFFFDFDFDFFFDFDFDFFE6E6E6FFBCBCBCFF666666FFEFEFEFFFE5E5
+    E5FF727272FF979797FFC2C2C2FFFDFDFDFFFDFDFDFFFCFCFCFFE6E6E6FFFDFD
+    FDFFFDFDFDFFE5E5E5FFF2F2F2FF666666FFF1F1F1FFBEBEBEFFC4C4C4FF8383
+    83FFE7E7E7FFFAFAFAFFFDFDFDFFFDFDFDFFE8E8E8FFCACACAFFA0A0A0FFC9C8
+    C9FFB0B0B0FFE7E7E7FFE7E7E7FFD4D4D4FFE6E6E6FFD5D5D5FFE4E4E4FFD4D4
+    D4FFDADADAFFDFDFDFFFB2B2B2FFE7E7E7FFE7E7E7FFE7E7E7FFD2D2D2FFE7E7
+    E7FFE7E7E7FFD1D1D1FFE6E6E6FFDBDBDBFFE5E5E5FFAFAFAFFFDDDDDDFFDCDC
+    DCFFD3D3D3FFE4E4E4FFE7E7E7FFE7E7E7FFD4D4D4FFE5E5E5FFDDDDDDFFBABA
+    BBFFBEBEBEFFFAFAFAFFFBFBFBFFE5E5E5FFFBFBFBFFFBFBFBFFF9F9F9FFE5E5
+    E5FFECECECFFCCCCCCFFBFBFBFFFFBFBFBFFFBFBFBFFFBFBFBFFE5E5E5FFFAFA
+    FAFFFBFBFBFFE3E3E3FFE8E8E8FF9C9C9CFFF3F3F3FFBCBCBCFFC5C5C5FFBABA
+    BAFFE5E5E5FFF8F8F8FFFBFBFBFFFBFBFBFFE7E7E7FFBDBDBDFFB5B5B5FFC7C6
+    C8FFBFBFBFFFFDFDFDFFFDFDFDFFE5E5E5FFFDFDFDFFFDFDFDFFFBFBFBFFE6E6
+    E6FF797979FF898989FFC1C1C1FFFDFDFDFFFCFCFCFFFDFDFDFFE6E6E6FFFDFD
+    FDFFFDFDFDFFE5E5E5FFFAFAFAFF818181FFECECECFFBCBCBCFFC5C5C5FF9696
+    96FFE6E6E6FFFAFAFAFFFDFDFDFFFDFDFDFFE8E8E8FF8F8F8FFF828282FFC9C8
+    C9FFBFBFBFFFFCFCFCFFFDFDFDFFE6E6E6FFFDFDFDFFFCFCFCFFFBFBFBFFE5E5
+    E5FFDEDEDEFFC5C5C5FFC1C1C1FFFCFCFCFFFCFCFCFFFDFDFDFFE6E6E6FFFCFC
+    FCFFFDFDFDFFE5E5E5FFEFEFEFFF9B9B9BFFF6F6F6FFBDBDBDFFC6C6C6FFC2C2
+    C2FFE6E6E6FFFAFAFAFFFCFCFCFFFCFCFCFFE8E8E8FFBCBCBCFFB6B6B6FFC9C8
+    CAFFB0B0B0FFE6E6E6FFE7E7E7FFD4D4D4FFE7E7E7FFE6E6E6FFE5E5E5FFD4D4
+    D4FFE0E0E0FFE3E3E3FFB2B2B2FFE6E6E6FFE7E7E7FFE7E7E7FFD2D2D2FFE6E6
+    E6FFE7E7E7FFD1D1D1FFE7E7E7FFE7E7E7FFE6E6E6FFB1B1B1FFE6E6E6FFE7E7
+    E7FFD3D3D3FFE4E4E4FFE4E4E4FFE4E4E4FFD5D5D5FFE7E7E7FFE7E7E7FFBAB9
+    BAFFC0C0C0FFFDFDFDFFFDFDFDFFE6E6E6FFFDFDFDFFFDFDFDFFFBFBFBFFE7E7
+    E7FFA7A7A7FF999999FFC1C1C1FFFDFDFDFFFDFDFDFFFDFDFDFFE6E6E6FFFCFC
+    FCFFFCFCFCFFE5E5E5FFFDFDFDFFFDFDFDFFFDFDFDFFBEBEBEFFFDFDFDFFFDFD
+    FDFFE7E7E7FFE0E0E0FF757575FFCACACAFFE7E7E7FFFDFDFDFFFDFDFDFFCAC9
+    CAFFBFBFBFFFFDFDFDFFFDFDFDFFE6E6E6FFFDFDFDFFFDFDFDFFFBFBFBFFE6E6
+    E6FF848484FFC5C5C5FFC1C1C1FFFDFDFDFFFDFDFDFFFCFCFCFFE6E6E6FFFCFC
+    FCFFFDFDFDFFE5E5E5FFFDFDFDFFFDFDFDFFFBFBFBFFBFBFBFFFFDFDFDFFFDFD
+    FDFFE6E6E6FFF6F6F6FF737373FFE3E3E3FFE7E7E7FFFDFDFDFFFDFDFDFFCAC9
+    CAFF929292FFBFBFBFFFC0C0C0FFAFAFAFFFC0C0C0FFBFBFBFFFBFBFBFFFB0B0
+    B0FFB5B5B5FFB9B9B9FF939393FFBFBFBFFFC0C0C0FFC0C0C0FFB0B0B0FFBFBF
+    BFFFC0C0C0FFAFAFAFFFC0C0C0FFC0C0C0FFBFBFBFFF929292FFC0C0C0FFC0C0
+    C0FFB1B1B1FFBDBDBDFFB8B8B8FFBDBDBDFFB1B1B1FFC0C0C0FFC0C0C0FF9C9B
+    9DFF000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000
+  }
+  KeyPreview = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  LCLVersion = '3.6.0.0'
+  object Label2: TLabel
+    Left = 0
+    Height = 33
+    Top = 696
+    Width = 1024
+    AutoSize = False
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label3: TLabel
+    Left = 0
+    Height = 30
+    Top = 32
+    Width = 1024
+    AutoSize = False
+    Caption = '===================================================================='
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clPurple
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label4: TLabel
+    Left = 0
+    Height = 30
+    Top = 666
+    Width = 1024
+    AutoSize = False
+    Caption = '===================================================================='
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clPurple
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label5: TLabel
+    Left = 0
+    Height = 30
+    Top = 528
+    Width = 1024
+    AutoSize = False
+    Caption = '===================================================================='
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clPurple
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label6: TLabel
+    Left = 328
+    Height = 32
+    Top = 564
+    Width = 289
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Anzahl Zahlen als Vorgabe:'
+    Color = clNavy
+    Font.Color = clYellow
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label7: TLabel
+    Left = 24
+    Height = 30
+    Top = 80
+    Width = 233
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Anzeigen Ziffern'
+    Color = clNavy
+    Font.Color = clYellow
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label8: TLabel
+    Left = 752
+    Height = 30
+    Top = 136
+    Width = 241
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Spielzeit'
+    Color = clNavy
+    Font.Color = clYellow
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label9: TLabel
+    Left = 752
+    Height = 33
+    Top = 168
+    Width = 241
+    Alignment = taCenter
+    AutoSize = False
+    Color = clInfoBk
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -32
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label10: TLabel
+    Left = 752
+    Height = 33
+    Top = 424
+    Width = 241
+    Alignment = taCenter
+    AutoSize = False
+    Color = clInfoBk
+    Font.Color = clBlue
+    Font.Height = -24
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object ComboBox1: TComboBox
+    Left = 616
+    Height = 32
+    Top = 564
+    Width = 57
+    Color = clInfoBk
+    Font.Color = clBlue
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ItemHeight = 24
+    ParentFont = False
+    TabOrder = 0
+    OnChange = ComboBox1Change
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 49
+    Top = 608
+    Width = 315
+    Caption = '<F3> neues Spiel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 352
+    Height = 49
+    Top = 608
+    Width = 315
+    Caption = '<F5> Spiel auflösen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 688
+    Height = 49
+    Top = 608
+    Width = 315
+    Caption = '<F9> Programm Ende'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Arial Black'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 4
+    OnClick = MaskEdit1Click
+    OnKeyUp = MaskEdit1KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit2: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 5
+    OnClick = MaskEdit2Click
+    OnKeyUp = MaskEdit2KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit3: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 6
+    OnClick = MaskEdit3Click
+    OnKeyUp = MaskEdit3KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit10: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 7
+    OnClick = MaskEdit10Click
+    OnKeyUp = MaskEdit10KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit11: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 8
+    OnClick = MaskEdit11Click
+    OnKeyUp = MaskEdit11KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit12: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 9
+    OnClick = MaskEdit12Click
+    OnKeyUp = MaskEdit12KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit19: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 10
+    OnClick = MaskEdit19Click
+    OnKeyUp = MaskEdit19KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit20: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 11
+    OnClick = MaskEdit20Click
+    OnKeyUp = MaskEdit20KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit21: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 12
+    OnClick = MaskEdit21Click
+    OnKeyUp = MaskEdit21KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit4: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 13
+    OnClick = MaskEdit4Click
+    OnKeyUp = MaskEdit4KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit5: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 14
+    OnClick = MaskEdit5Click
+    OnKeyUp = MaskEdit5KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit6: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 15
+    OnClick = MaskEdit6Click
+    OnKeyUp = MaskEdit6KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit13: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 16
+    OnClick = MaskEdit13Click
+    OnKeyUp = MaskEdit13KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit14: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 17
+    OnClick = MaskEdit14Click
+    OnKeyUp = MaskEdit14KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit15: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 18
+    OnClick = MaskEdit15Click
+    OnKeyUp = MaskEdit15KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit22: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 19
+    OnClick = MaskEdit22Click
+    OnKeyUp = MaskEdit22KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit23: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 20
+    OnClick = MaskEdit23Click
+    OnKeyUp = MaskEdit23KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit24: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 21
+    OnClick = MaskEdit24Click
+    OnKeyUp = MaskEdit24KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit7: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 22
+    OnClick = MaskEdit7Click
+    OnKeyUp = MaskEdit7KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit8: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 23
+    OnClick = MaskEdit8Click
+    OnKeyUp = MaskEdit8KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit17: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 24
+    OnClick = MaskEdit17Click
+    OnKeyUp = MaskEdit17KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit16: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 25
+    OnClick = MaskEdit16Click
+    OnKeyUp = MaskEdit16KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit25: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 26
+    OnClick = MaskEdit25Click
+    OnKeyUp = MaskEdit25KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit18: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 128
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 27
+    OnClick = MaskEdit18Click
+    OnKeyUp = MaskEdit18KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit27: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 28
+    OnClick = MaskEdit27Click
+    OnKeyUp = MaskEdit27KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit26: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 176
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 29
+    OnClick = MaskEdit26Click
+    OnKeyUp = MaskEdit26KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit9: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 80
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 30
+    OnClick = MaskEdit9Click
+    OnKeyUp = MaskEdit9KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit28: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 31
+    OnClick = MaskEdit28Click
+    OnKeyUp = MaskEdit28KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit37: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 32
+    OnClick = MaskEdit37Click
+    OnKeyUp = MaskEdit37KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit46: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 33
+    OnClick = MaskEdit46Click
+    OnKeyUp = MaskEdit46KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit55: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 34
+    OnClick = MaskEdit55Click
+    OnKeyUp = MaskEdit55KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit64: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 35
+    OnClick = MaskEdit64Click
+    OnKeyUp = MaskEdit64KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit73: TMaskEdit
+    Left = 296
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 36
+    OnClick = MaskEdit73Click
+    OnKeyUp = MaskEdit73KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit29: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 37
+    OnClick = MaskEdit29Click
+    OnKeyUp = MaskEdit29KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit30: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 38
+    OnClick = MaskEdit30Click
+    OnKeyUp = MaskEdit30KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit38: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 39
+    OnClick = MaskEdit38Click
+    OnKeyUp = MaskEdit38KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit39: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 40
+    OnClick = MaskEdit39Click
+    OnKeyUp = MaskEdit39KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit48: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 41
+    OnClick = MaskEdit48Click
+    OnKeyUp = MaskEdit48KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit31: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 42
+    OnClick = MaskEdit31Click
+    OnKeyUp = MaskEdit31KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit32: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 43
+    OnClick = MaskEdit32Click
+    OnKeyUp = MaskEdit32KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit33: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 44
+    OnClick = MaskEdit33Click
+    OnKeyUp = MaskEdit33KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit47: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 45
+    OnClick = MaskEdit47Click
+    OnKeyUp = MaskEdit47KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit49: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 46
+    OnClick = MaskEdit49Click
+    OnKeyUp = MaskEdit49KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit50: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 47
+    OnClick = MaskEdit50Click
+    OnKeyUp = MaskEdit50KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit51: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 48
+    OnClick = MaskEdit51Click
+    OnKeyUp = MaskEdit51KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit40: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 49
+    OnClick = MaskEdit40Click
+    OnKeyUp = MaskEdit40KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit41: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 50
+    OnClick = MaskEdit41Click
+    OnKeyUp = MaskEdit41KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit42: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 51
+    OnClick = MaskEdit42Click
+    OnKeyUp = MaskEdit42KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit34: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 52
+    OnClick = MaskEdit34Click
+    OnKeyUp = MaskEdit34KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit35: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 53
+    OnClick = MaskEdit35Click
+    OnKeyUp = MaskEdit35KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit36: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 224
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 54
+    OnClick = MaskEdit36Click
+    OnKeyUp = MaskEdit36KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit43: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 55
+    OnClick = MaskEdit43Click
+    OnKeyUp = MaskEdit43KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit44: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 56
+    OnClick = MaskEdit44Click
+    OnKeyUp = MaskEdit44KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit45: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 272
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 57
+    OnClick = MaskEdit45Click
+    OnKeyUp = MaskEdit45KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit52: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 58
+    OnClick = MaskEdit52Click
+    OnKeyUp = MaskEdit52KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit53: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 59
+    OnClick = MaskEdit53Click
+    OnKeyUp = MaskEdit53KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit54: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 320
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 60
+    OnClick = MaskEdit54Click
+    OnKeyUp = MaskEdit54KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit56: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 61
+    OnClick = MaskEdit56Click
+    OnKeyUp = MaskEdit56KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit57: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 62
+    OnClick = MaskEdit57Click
+    OnKeyUp = MaskEdit57KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit65: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 63
+    OnClick = MaskEdit65Click
+    OnKeyUp = MaskEdit65KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit66: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 64
+    OnClick = MaskEdit66Click
+    OnKeyUp = MaskEdit66KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit74: TMaskEdit
+    Left = 344
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 65
+    OnClick = MaskEdit74Click
+    OnKeyUp = MaskEdit74KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit75: TMaskEdit
+    Left = 392
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 66
+    OnClick = MaskEdit75Click
+    OnKeyUp = MaskEdit75KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit58: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 67
+    OnClick = MaskEdit58Click
+    OnKeyUp = MaskEdit58KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit59: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 68
+    OnClick = MaskEdit59Click
+    OnKeyUp = MaskEdit59KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit60: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 69
+    OnClick = MaskEdit60Click
+    OnKeyUp = MaskEdit60KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit61: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 70
+    OnClick = MaskEdit61Click
+    OnKeyUp = MaskEdit61KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit77: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 71
+    OnClick = MaskEdit77Click
+    OnKeyUp = MaskEdit77KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit78: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 72
+    OnClick = MaskEdit78Click
+    OnKeyUp = MaskEdit78KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit67: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 73
+    OnClick = MaskEdit67Click
+    OnKeyUp = MaskEdit67KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit68: TMaskEdit
+    Left = 488
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 74
+    OnClick = MaskEdit68Click
+    OnKeyUp = MaskEdit68KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit69: TMaskEdit
+    Left = 536
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 75
+    OnClick = MaskEdit69Click
+    OnKeyUp = MaskEdit69KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit76: TMaskEdit
+    Left = 440
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clSkyBlue
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 76
+    OnClick = MaskEdit76Click
+    OnKeyUp = MaskEdit76KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit62: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 77
+    OnClick = MaskEdit62Click
+    OnKeyUp = MaskEdit62KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit63: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 368
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 78
+    OnClick = MaskEdit63Click
+    OnKeyUp = MaskEdit63KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit70: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 79
+    OnClick = MaskEdit70Click
+    OnKeyUp = MaskEdit70KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit71: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 80
+    OnClick = MaskEdit71Click
+    OnKeyUp = MaskEdit71KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit72: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 416
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 81
+    OnClick = MaskEdit72Click
+    OnKeyUp = MaskEdit72KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit79: TMaskEdit
+    Left = 584
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 82
+    OnClick = MaskEdit79Click
+    OnKeyUp = MaskEdit79KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit80: TMaskEdit
+    Left = 632
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 83
+    OnClick = MaskEdit80Click
+    OnKeyUp = MaskEdit80KeyUp
+    SpaceChar = #0
+  end
+  object MaskEdit81: TMaskEdit
+    Left = 680
+    Height = 45
+    Top = 464
+    Width = 45
+    Alignment = taCenter
+    AutoSelect = False
+    AutoSize = False
+    Color = clWhite
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 1
+    ParentFont = False
+    TabOrder = 84
+    OnClick = MaskEdit81Click
+    OnKeyUp = MaskEdit81KeyUp
+    SpaceChar = #0
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 38
+    Top = 0
+    Width = 1024
+    Alignment = taCenter
+    AutoSize = False
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clGreen
+    Font.Height = -21
+    Font.Name = 'Bungee Inline'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object BGRASpeedButton1: TBGRASpeedButton
+    Left = 64
+    Height = 57
+    Top = 128
+    Width = 57
+    Caption = '1'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton1Click
+    ParentFont = False
+  end
+  object BGRASpeedButton2: TBGRASpeedButton
+    Left = 168
+    Height = 57
+    Top = 128
+    Width = 57
+    Caption = '2'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton2Click
+    ParentFont = False
+  end
+  object BGRASpeedButton3: TBGRASpeedButton
+    Left = 64
+    Height = 57
+    Top = 208
+    Width = 57
+    Caption = '3'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton3Click
+    ParentFont = False
+  end
+  object BGRASpeedButton4: TBGRASpeedButton
+    Left = 168
+    Height = 57
+    Top = 208
+    Width = 57
+    Caption = '4'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton4Click
+    ParentFont = False
+  end
+  object BGRASpeedButton5: TBGRASpeedButton
+    Left = 64
+    Height = 57
+    Top = 288
+    Width = 57
+    Caption = '5'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton5Click
+    ParentFont = False
+  end
+  object BGRASpeedButton6: TBGRASpeedButton
+    Left = 168
+    Height = 57
+    Top = 288
+    Width = 57
+    Caption = '6'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton6Click
+    ParentFont = False
+  end
+  object BGRASpeedButton7: TBGRASpeedButton
+    Left = 64
+    Height = 57
+    Top = 368
+    Width = 57
+    Caption = '7'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton7Click
+    ParentFont = False
+  end
+  object BGRASpeedButton8: TBGRASpeedButton
+    Left = 168
+    Height = 57
+    Top = 368
+    Width = 57
+    Caption = '8'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton8Click
+    ParentFont = False
+  end
+  object BGRASpeedButton9: TBGRASpeedButton
+    Left = 118
+    Height = 57
+    Top = 446
+    Width = 57
+    Caption = '9'
+    Color = clMaroon
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clLime
+    Font.Height = -48
+    Font.Name = 'Fugaz One'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton9Click
+    ParentFont = False
+  end
+  object BGRASpeedButton10: TBGRASpeedButton
+    Left = 752
+    Height = 49
+    Top = 376
+    Width = 241
+    Caption = 'mögliche Zahlen im Feld'
+    Color = 8454143
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Transparent = False
+    OnClick = BGRASpeedButton10Click
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 856
+    Top = 288
+  end
+end
